@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+
+    <ImageView
+        android:id="@+id/selectImageId"
+        android:layout_width="296dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="38dp"
+        android:onClick="selectImageF"
+        app:layout_constraintBottom_toTopOf="@+id/commentId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selectimage" />
+
+    <EditText
+        android:id="@+id/commentId"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="Enter Comment"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/uploadButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectImageId" />
+
+    <Button
+        android:id="@+id/uploadButtonId"
+        android:layout_width="175dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="30dp"
+        android:onClick="uploadF"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentId" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="257dp"
+        android:layout_height="34dp"
+        android:text="Add New Post"
+        android:textAlignment="center"
+        android:textColor="#FF8214"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/selectImageId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
